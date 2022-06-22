@@ -1,0 +1,13 @@
+title New Note
+
+note over browser:
+user enters text and clicks the submit button
+end note
+
+note over browser:
+note is created and note list is redrawn locally before submission
+end note
+
+browser->server: HTTP post https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: HTTP Status 201
+
